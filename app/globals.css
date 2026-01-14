@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+
+
+
+  
+
+@theme {
+  --font-sans: "Roboto", system-ui, sans-serif;
+  --color-primary: #E8604C;
+  --color-secondary: #313041;
+  --color-text: #9D9D9D;
+  --color-accent: #61CE70;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+@font-face {
+  font-family: "Reey";
+  src: url("/fonts/Reey-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-reey {
+  font-family: "Reey", cursive;
+}
+
+/* Base container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* md (≥768px) */
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+/* lg (≥1024px) */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+/* xl (≥1280px) */
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* 2xl (≥1536px) */
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1320px;
+  }
+}
