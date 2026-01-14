@@ -11,7 +11,7 @@ export default function News() {
 		<div>
 			<BannerTitle title={t("News")} desc=''/>
 
-			<div className="container grid grid-cols-3 gap-10 my-10">
+			<div className="container grid sm:grid-cols-3 grid-cols-1 gap-10 my-10">
 				{newSlug.map((item) => (
 				<div className="" key={item.slug}>
 					<CardNews slug={item.slug} title={item.title} day={item.day} month={item.month} image={item.image} author={item.author} excerpt={item.excerpt}/>
